@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:video/themes/app_colors.dart';
+import 'package:video/views/themes/app_colors.dart';
 
 class VideoAppbar extends StatelessWidget implements PreferredSizeWidget {
   const VideoAppbar({super.key});
@@ -7,17 +7,18 @@ class VideoAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
       leadingWidth: 25,
       leading: IconButton(
-        onPressed: () {},
+        onPressed: () {
+          Scaffold.of(context).openDrawer();
+        },
         icon: const Icon(
           Icons.menu,
           color: AppColors.darkGreyColor,
         ),
       ),
       title: Row(
-         mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Image.asset(
             "assets/images/apptitle_logo.png",
@@ -39,11 +40,16 @@ class VideoAppbar extends StatelessWidget implements PreferredSizeWidget {
           color: AppColors.lightGreyColor,
           size: 25,
         ),
-        const SizedBox(width: 10,),
+        const SizedBox(
+          width: 10,
+        ),
         Image.asset(
           "assets/images/sun.png",
-          width: 30,
-          height: 30,
+          width: 20,
+          height: 20,
+        ),
+        const SizedBox(
+          width: 5,
         ),
       ],
     );

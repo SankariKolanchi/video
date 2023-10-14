@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:video/themes/app_theme.dart';
-import 'package:video/views/screens/home_screen.dart';
-import 'package:video/views/screens/splash_screen.dart';
+
+import 'views/screens/splash_screen.dart';
+import 'views/themes/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-
-
