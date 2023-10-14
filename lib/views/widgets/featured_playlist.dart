@@ -14,6 +14,7 @@ class FeaturedPlayList extends StatefulWidget {
 class _FeaturedPlayListState extends State<FeaturedPlayList> {
   int index = 0;
 
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -28,14 +29,17 @@ class _FeaturedPlayListState extends State<FeaturedPlayList> {
         ),
         SizedBox(
           height: 280,
-          child: ListView.builder(
+          child: PageView.builder(
               scrollDirection: Axis.horizontal,
-              shrinkWrap: true,
               itemCount: featuredPlayListModel.length,
-              padding: const EdgeInsets.all(0),
+              onPageChanged: (i){
+                index = i;
+                setState(() {
+
+                });
+              },
               itemBuilder: (context, i) {
                 final item = featuredPlayListModel[i];
-                index = i;
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 18),
                   child: Column(

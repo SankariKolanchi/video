@@ -45,7 +45,7 @@ class ElementsWellnessList extends StatelessWidget {
                   children: [
                     Text(
                       "See All",
-                      style: AppTextStyle.blackF14F500TextStyle,
+                      style: AppTextStyle.blackF14FW500TextStyle,
                     ),
                     SizedBox(width: 2),
                     Icon(Icons.more_horiz, size: 20)
@@ -125,7 +125,7 @@ class ShareWidget extends StatelessWidget {
             children: [
               const Text(
                 "Share",
-                style: AppTextStyle.blackF14W500TextStyle,
+                style: AppTextStyle.blackF14FW500TextStyle,
               ),
               const SizedBox(
                 width: 4,

@@ -27,6 +27,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       ..initialize().then((_) {
         setState(() {});
       });
+    _controller?.play();
   }
 
   @override

@@ -24,12 +24,12 @@ class AllVideosScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6),
-                color: AppColors.lightBluecolor),
+                color: AppColors.lightBlueColor),
             child: RichText(
                 textAlign: TextAlign.start,
                 text: const TextSpan(
                     text: 'All Videos [',
-                    style: AppTextStyle.blackTextStyle,
+                    style: AppTextStyle.blackF18FW400TextStyle,
                     children: [
                       TextSpan(
                           text: "128",
